@@ -618,7 +618,7 @@ This list of flushed between commands.")
 ;;; file should use these functions when applicable.
 ;;;
 ;;;;; Syntactic sugar
-
+#|
 (cl-defmacro when-let ((var value) &rest body)
   "Evaluate VALUE, if the result is non-nil bind it to VAR and eval BODY.
 
@@ -626,7 +626,7 @@ This list of flushed between commands.")
   (declare (indent 1))
   `(let ((,var ,value))
      (when ,var ,@body)))
-
+|#
 (defmacro destructure-case (value &rest patterns)
   "Dispatch VALUE to one of PATTERNS.
 A cross between `case' and `destructuring-bind'.
